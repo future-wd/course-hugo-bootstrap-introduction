@@ -1,4 +1,26 @@
 {{ define "main" }}
-{{ .Site.Title }}
-{{ .Content | markdownify }}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src="/img/bootstrap-themes.png" alt="Bootstrap Themes" class="img-fluid d-block mx-auto">
+    </div>
+    <div class="col-lg-6 order-lg-first">
+      <h1>{{ .Params.heading }}</h1>
+        <p>{{ .Content | markdownify }}</p>
+        <div>
+          {{ with .Params.btn1 }}
+          {{ if and .text .url }}
+          <button type="button" href="{{ .url }}" class="btn btn-lg btn-primary px-4 me-2">{{ .text }}</button>
+          {{ end }}
+          {{ end }}
+          {{ with .Params.btn2 }}
+          {{ if and .text .url }}
+          <button type="button" href="{{ .url }}" class="btn btn-lg btn-outline-secondary px-4">{{ .text }}</button>
+          {{ end }}
+          {{ end }}
+        </div>
+    </div>
+  </div>
+</div>
+
 {{ end }}
