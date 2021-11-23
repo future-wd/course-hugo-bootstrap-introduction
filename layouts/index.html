@@ -1,16 +1,16 @@
 {{ define "main" }}
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
+<div class="container col-xxl-8">
+  <div class="row align-items-center justify-content-center py-5 g-5">
+    <div class="col-10 col-sm-8 col-lg-6">
       <img src="/img/bootstrap-themes.png" alt="Bootstrap Themes" class="img-fluid d-block mx-auto">
     </div>
     <div class="col-lg-6 order-lg-first">
       <h1>{{ .Params.heading }}</h1>
         <p>{{ .Content | markdownify }}</p>
-        <div>
+        <div class="d-grid gap-2 d-md-flex">
           {{ with .Params.btn1 }}
           {{ if and .text .url }}
-          <button type="button" href="{{ .url }}" class="btn btn-lg btn-primary px-4 me-2">{{ .text }}</button>
+          <button type="button" href="{{ .url }}" class="btn btn-lg btn-primary px-4 me-md-2">{{ .text }}</button>
           {{ end }}
           {{ end }}
           {{ with .Params.btn2 }}
