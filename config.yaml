@@ -1,6 +1,8 @@
 baseURL: http://example.org/
 languageCode: en-au
 title: My New Hugo Site
+# alternate copyright company text
+copyright: Web Design Inc.
 
 # this is required so that Hugo will render markdown to HTML
 markup:
