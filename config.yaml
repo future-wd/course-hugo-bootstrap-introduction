@@ -1,0 +1,8 @@
+baseURL: http://example.org/
+languageCode: en-au
+title: My New Hugo Site
+# this is required so that Hugo will render markdown to HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
