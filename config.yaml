@@ -16,7 +16,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
 # menu links via config file
 menu:
   main:
