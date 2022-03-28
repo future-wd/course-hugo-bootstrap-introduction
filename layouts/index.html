@@ -6,7 +6,7 @@
     </div>
     <div class="col-lg-6 order-lg-first">
       <h1>{{ .Params.heading }}</h1>
-        <p class="lead">{{ .Content | markdownify }}</p>
+        <p class="lead">{{ .Content }}</p>    
         <div class="d-grid gap-2 d-md-flex">
           {{ with .Params.btn1 }}
           {{ if and .text .url }}
