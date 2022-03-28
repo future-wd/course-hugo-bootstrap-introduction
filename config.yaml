@@ -3,7 +3,7 @@ baseURL: http://localhost/
 disableKinds:
 - taxonomy
 - taxonomyTerm
-languageCode: en-au
+defaultContentLanguage: en-au
 title: My New Hugo Site
 # alternate copyright company text
 copyright: Web Design Inc.
